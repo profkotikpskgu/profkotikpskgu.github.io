@@ -80,6 +80,7 @@ article{
 }
 section{
     height: calc(100vh - 20px);
+	min-height: 508px;
     width: calc(100% - 20px);
     padding: 10px;
     color: white;
@@ -91,9 +92,20 @@ section{
     section.green{
         background: var(--GREEN);
     }
+	section.white{
+		background: white;
+		color: var(--BLUE);
+	}
+		section.white h2{
+			color: var(--GREEN);
+		}
+		section.white h2:after{
+			background: var(--GREEN);
+		}
 	/*для первой страницы меньший размер*/
 	.firstPage{
-		height: calc(100vh - 220px)
+		height: calc(100vh - 220px);
+		min-height: auto;
 	}
 		
     .content{
@@ -112,16 +124,25 @@ section{
             width: 100%;
             transform: translate(-50%, -50%);
             text-align: center;
+			height: inherit;
         }
             .container > div{
-                text-align: left;
+                text-align: center;
                 display: inline-block;
                 margin: 5px;
                 vertical-align: top;
                 min-width: 350px;
                 max-width: 70%;
+				min-height: 400px;
             }
-
+				/*классы дивов |^| */
+				.single{
+					/*в секции 1 див*/
+					max-width: 90%;
+				}
+				.dual{
+					max-width: calc(50% - 10px);
+				}
 h2, #firstPageH2{
     font-family: HEADERS;
     text-align: center;
