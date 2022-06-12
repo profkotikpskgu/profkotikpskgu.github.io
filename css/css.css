@@ -38,7 +38,7 @@ header{
         opacity: 100%;
         cursor: pointer;
     }
-	
+
 	#contacts{
 		background: rgba(255, 255, 255, 0.8);
 		display: block;
@@ -48,7 +48,7 @@ header{
 		border-radius: 25px;
 		right: 10px;
 		bottom: 10px;
-		
+
 		text-align: right;
 	}
 		#contacts > *{
@@ -65,14 +65,14 @@ header{
 			width: inherit;
 			height: inherit;
 		}
-	
+
     header.activeWindow #logo{
         top: 50px;
-		opacity: 100%;
-		/*тени*/
-		-webkit-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
-		-moz-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
-		box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
+		      opacity: 100%;
+		        /*тени*/
+		          -webkit-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
+		            -moz-box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
+		              box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
     }
 article{
     height: auto;
@@ -89,9 +89,15 @@ section{
     section.blue{
         background: var(--BLUE);
     }
+      section.blue a{
+        color: var(--GREEN);
+      }
     section.green{
         background: var(--GREEN);
     }
+      section.green a{
+        color: var(--BLUE);
+      }
 	section.white{
 		background: white;
 		color: var(--BLUE);
@@ -107,7 +113,7 @@ section{
 		height: calc(100vh - 220px);
 		min-height: auto;
 	}
-		
+
     .content{
         width: 100%;
         height: calc(100vh - 108px - 20px - 10px);
@@ -141,7 +147,7 @@ section{
 					max-width: 90%;
 				}
 				.dual{
-					max-width: calc(50% - 10px);
+					max-width: calc(50% - 10px) !important;
 				}
 h2, #firstPageH2{
     font-family: HEADERS;
@@ -160,4 +166,39 @@ h2, #firstPageH2{
     }
 h3{
     text-align: center;
+    margin: 20px;
+}
+
+/*
+  ОТДЕЛЬНЫЕ ЭЛЕМЕНТЫ
+*/
+a{
+  text-decoration: none;
+}
+  a:hover{
+    text-decoration: underline;
+  }
+/*
+  ДЛЯ КАЖДОЙ СТРАНИЦЫ
+*/
+/*страница с профоргами*/
+.proforg_cards{
+  display: inline-block;
+  /*height: calc((100vh - 108px - 20px - 10px - 83px)/2)*/;
+  margin-bottom: 30px;
+  width: 20%;
+}
+.proforg_cards > *{
+  display: block;
+  margin: 5px auto;
+
+}
+.proforg_cards > img{
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+/*руководители*/
+#rukovoditeli_img{
+	width: 100%;
 }
