@@ -1,10 +1,14 @@
 :root{
-    --BLUE: rgb(63, 76, 121);
+    --BLUE: rgb(63, 76, 121);	/**/
     --GREEN: rgb(46, 168, 91);
 }
 @font-face{
 	font-family: HEADERS;
     src: url("gravtrac condensed bd.ttf");
+}
+@font-face{
+	font-family: a_BosaNova;
+    src: url("abosanova.ttf");
 }
 body{
     margin: 0;
@@ -108,6 +112,9 @@ section{
 		section.white h2:after{
 			background: var(--GREEN);
 		}
+		section.white h3{
+			color: var(--GREEN);
+		}
 	/*для первой страницы меньший размер*/
 	.firstPage{
 		height: calc(100vh - 220px);
@@ -123,9 +130,13 @@ section{
 	.firstPage .content{
 		height: calc(100vh - 108px - 20px - 10px - 200px);
 	}
+	.firstPage .container > div{
+		font-family: a_BosaNova;
+		font-size: 300%;
+	}
         .container{
             position: absolute;
-            top: calc(50%);
+            top: 50%;
             left: 50%;
             width: 100%;
             transform: translate(-50%, -50%);
@@ -149,8 +160,18 @@ section{
 				.dual{
 					max-width: calc(50% - 10px) !important;
 				}
+footer{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+	footer > *{
+		display: inline-block;
+		margin: 10px 40px;
+	}
 h2, #firstPageH2{
-    font-family: HEADERS;
+    font-family: a_BosaNova;
     text-align: center;
     font-size: 35pt;
     margin: 20px 0;
@@ -165,6 +186,7 @@ h2, #firstPageH2{
         margin: 8px auto;
     }
 h3{
+	font-family: a_BosaNova;
     text-align: center;
     margin: 20px;
 }
@@ -228,6 +250,51 @@ a{
   height: 260px;
 }
 /*страничка для перваков*/
+.for_pervokursniki > div{
+	margin: 10px;
+	width: 40%;
+	height: 200px;
+}
 .for_pervokursniki a{
-	
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: relative;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: padding-box;
+	background-size: auto 100%;
+}
+	.for_pervokursniki a:hover{
+		opacity: 1;
+	}
+	#for_pervokursniki_chat{
+		background-image: url(/css/img/chat_bubble.svg);
+	}
+	#for_pervokursniki_quest{
+		background-image: url(/css/img/quest.svg);
+	}
+	#for_pervokursniki_zayavka{
+		background-image: url(/css/img/zayavka.svg);
+	}
+	#for_pervokursniki_pamyatka{
+		background-image: url(/css/img/pamyatka.svg);
+	}
+/*вместе с профкомом*/
+.preimushesva > div{
+	vertical-align: top;
+	display: inline-block;
+	/*height: calc((100vh - 108px - 20px - 10px - 83px)/2)*/;
+	margin-bottom: 30px;
+	width: 40%;
+	min-width: 260px;
+}
+/*партнёры*/
+.partners > *{
+	display: inline-block;
+	padding: 20px;
+	margin: 20px;
+	font-size: 125%;
 }
