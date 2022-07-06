@@ -1,0 +1,52 @@
+@media screen and (max-width: 780px) {
+	*{
+		font-size: 1em;
+	}
+	section{
+		height: fit-content;
+	}
+	.content{
+		position:inherit;
+		height:fit-content;
+	}
+	.container{
+		position: inherit;
+		transform:none;
+	}
+	.container > div {
+        width: 100% !important;
+		max-width: 100%;
+        display: block !important;
+        margin: 0!important;
+		text-align: center !important;
+		transform:none;
+		position:inherit !important;
+	}
+	h2{
+		height:auto;
+		font-size: 3em;
+	}
+	h3{
+		font-size: 2em;
+	}
+	.dual{
+		max-width:100% !important;
+	}
+	.proforg_cards{
+		display: block !important;
+		height: fit-content;
+		width: 100%;
+	}
+		.proforg_cards span{
+			font-size: 1.5em;
+		}
+	.partners > *{
+		margin: 0;
+	}
+	.komissii_cards span:first-child{
+		font-size: 1.5em;
+	}
+	.for_pervokursniki > div{
+		margin-bottom: 10px !important;
+	}
+}

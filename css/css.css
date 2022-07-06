@@ -249,6 +249,9 @@ a{
   width: 260px;
   height: 260px;
 }
+.komissii_cards > span{
+	font-weight: bold;
+}
 /*страничка для перваков*/
 .for_pervokursniki > div{
 	margin: 10px;
@@ -297,4 +300,7 @@ a{
 	padding: 20px;
 	margin: 20px;
 	font-size: 125%;
+}
+.partners a{
+	color: white !important;
 }
