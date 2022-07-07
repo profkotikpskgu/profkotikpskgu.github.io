@@ -1,4 +1,4 @@
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 780px){
 	*{
 		font-size: 1em;
 	}
@@ -48,5 +48,15 @@
 	}
 	.for_pervokursniki > div{
 		margin-bottom: 10px !important;
+	}
+	footer{
+		border-top: 1px solid var(--BLUE);
+		padding-top: 10px;
+	}
+		footer > div{
+			margin: 0;
+		}
+	#YaMapsFrame{
+		width: 100%;
 	}
 }

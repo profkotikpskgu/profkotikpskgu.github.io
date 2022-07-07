@@ -1,2 +1,6 @@
 //сообщество вк - пост
- VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, height: 400, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 13857884);
+VK.Widgets.Post('vk_post_-13857884_13894', -13857884, 13894, 'S4PQB8FRWaYmxJLh7VUkuSJNs7_U');
+VK.Widgets.CommunityMessages("vk_community_messages", 13857884, {disableButtonTooltip: 1, disableExpandChatSound: 1});
+
+VK.init({ apiId: 8212690, onlyWidgets: true });
+VK.Widgets.Comments("vk_comments", {limit: 15, attach: "*"});	//комментарии
